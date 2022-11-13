@@ -1,0 +1,13 @@
+{
+  "name": "ace3decl",
+  "version": "1.0.0",
+  "description": "ace3 declarations",
+  "main": "./index.d.ts",
+  "keywords": [
+    "ace3",
+    "wow",
+    "addon"
+  ],
+  "author": "mztikk",
+  "license": "MIT"
+}
