@@ -17,8 +17,8 @@ declare interface GroupItem extends OptionsItem {
 
 declare interface ToggleItem extends OptionsItem {
     type: toggle
-    get?: (this: void, info: string) => bool
-    set?: (this: void, info: string, value: bool) => void
+    get?: (this: void, info: string) => boolean
+    set?: (this: void, info: string, value: boolean) => void
 }
 
 declare interface RangeItem extends OptionsItem {
@@ -30,5 +30,5 @@ declare interface RangeItem extends OptionsItem {
 }
 
 declare interface IAceConfig {
-    RegisterOptionsTable(name: string, options: OptionsTable): void
+    RegisterOptionsTable(name: string, options: GroupItem): void
 }
