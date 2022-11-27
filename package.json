@@ -9,5 +9,10 @@
     "addon"
   ],
   "author": "mztikk",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "lua-types": "^2.13.0",
+    "typescript": "^4.9.3",
+    "typescript-to-lua": "^1.11.0"
+  }
 }

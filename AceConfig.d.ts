@@ -1,7 +1,8 @@
 declare type toggle = "toggle"
 declare type range = "range"
 declare type group = "group"
-declare type ItemType = group | toggle | range
+declare type header = "header"
+declare type ItemType = group | toggle | range | header
 
 declare interface OptionsItem {
     name?: string
@@ -28,6 +29,10 @@ declare interface RangeItem extends OptionsItem {
     step?: number
     get?: (this: void, info: string) => number
     set?: (this: void, info: string, value: number) => void
+}
+
+declare interface HeaderItem extends OptionsItem {
+    type: header
 }
 
 declare interface IAceConfig {
