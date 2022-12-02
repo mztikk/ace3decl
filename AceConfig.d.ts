@@ -7,7 +7,8 @@ declare type ItemType = group | toggle | range | header
 declare interface OptionsItem {
     name?: string
     type: ItemType
-    desc?: string
+    desc?: string,
+    order?: number
 }
 
 declare interface GroupItem extends OptionsItem {
