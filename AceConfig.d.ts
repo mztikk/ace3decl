@@ -4,6 +4,8 @@ declare type group = "group"
 declare type header = "header"
 declare type ItemType = group | toggle | range | header
 
+declare type ChildGroupType = "tree" | "tab" | "select"
+
 declare interface OptionsItem {
     name?: string
     type: ItemType
@@ -15,7 +17,8 @@ declare interface GroupItem extends OptionsItem {
     type: group,
     args: {
         [P: string]: OptionsItem
-    }
+    },
+    childGroups?: ChildGroupType
 }
 
 declare interface ToggleItem extends OptionsItem {
